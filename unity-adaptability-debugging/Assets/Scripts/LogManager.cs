@@ -21,7 +21,7 @@ public class LogManager : MonoBehaviour {
 	void Awake ()
 	{
 		// Set File directories and Paths
-		logDirectory       = Application.dataPath + "/logs/" + user_id + "/";  // Log directory for user in Assets/logs/
+		logDirectory       = Application.dataPath + "/logs/" + user_id + "_" + EpochTime() + "/";  // Log directory for user in Assets/logs/ ; EpochTime() so as not to override multiple trials of same user.
 		sessionLogPath     = logDirectory + "session.tsv";
 		eventLogPath       = logDirectory + "events.tsv";
 		streamLogDirectory = logDirectory + "streams/";
@@ -57,6 +57,7 @@ public class LogManager : MonoBehaviour {
 		return (((System.DateTime.UtcNow - epochStart).TotalMilliseconds * 100));  // * 100 to remove decimal places
 	}
 
+	// Convert a string into a stream log file path of file-type .tsv
 	public string CreateStreamPath (string SteamLogFileName) {
 		return(streamLogDirectory + SteamLogFileName + ".tsv");
 	}
