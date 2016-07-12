@@ -6,10 +6,10 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{83A49924-8F6F-215E-89AB-2EB47805E0D7}</ProjectGuid>
+    <ProjectGuid>{AB941BAF-9468-B74D-101E-D854B2A61CD7}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <AssemblyName>Assembly-UnityScript</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <BaseDirectory>Assets</BaseDirectory>
@@ -45,12 +45,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\ForGame\MovePlayerLeftRight.cs" />
-     <Compile Include="Assets\Scripts\LogManager.cs" />
-     <Compile Include="Assets\Scripts\TimeStamps.cs" />
-     <None Include="Assets\logs\testUser\session.txt" />
-     <None Include="Assets\logs\testUser\streams\cube_horizontal.txt" />
-     <None Include="Assets\logs\testUser\events.txt" />
+     <Compile Include="Assets\logs\testUser\NewBehaviourScript.js" />
+     <None Include="Assets\logs\testUser\a_stream_log.txt" />
+     <None Include="Assets\logs\testUser\an_event_log.txt" />
+     <None Include="Assets\logs\testUser\a_session_log.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>

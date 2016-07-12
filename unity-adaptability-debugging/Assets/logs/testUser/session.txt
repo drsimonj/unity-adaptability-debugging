@@ -1,5 +1,5 @@
 Session details:
 
-start	7/12/2016 3:41:01 PM
+start	7/12/2016 5:39:57 PM
 GMT+	10
 uid	testUser
