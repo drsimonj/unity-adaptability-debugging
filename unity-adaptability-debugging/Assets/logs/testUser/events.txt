@@ -1,3 +1,0 @@
-146830919804924	cube_collision	Ground
-146830920003078	cube_collision	ColliderLeft
-146830920706119	cube_collision	ColliderLeft
