@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/_Scenes/log_json_test.unity
+- path: Assets/_Scenes/logs_test.unity
   isLoaded: 1
   isActive: 1
