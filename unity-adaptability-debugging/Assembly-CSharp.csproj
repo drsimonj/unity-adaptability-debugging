@@ -6,7 +6,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{BEDA73D0-5328-EC49-83D5-DAF41555DB23}</ProjectGuid>
+    <ProjectGuid>{83A49924-8F6F-215E-89AB-2EB47805E0D7}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -45,8 +45,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\LogToFile.cs" />
      <Compile Include="Assets\Scripts\TimeStamps.cs" />
-     <Compile Include="Assets\Scripts\WriteToFile.cs" />
+     <None Include="Assets\logs\testUser\a_stream_log.txt" />
+     <None Include="Assets\logs\testUser\an_event_log.txt" />
+     <None Include="Assets\logs\testUser\a_session_log.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
