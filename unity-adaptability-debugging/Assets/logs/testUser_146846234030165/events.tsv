@@ -1,0 +1,5 @@
+234037648	cube_collision	Ground
+234201244	cube_collision	ColliderLeft
+234480168	cube_collision	ColliderRight
+234790884	cube_collision	ColliderTop
+235124591	cube_collision	ColliderBottom
