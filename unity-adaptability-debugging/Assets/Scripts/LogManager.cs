@@ -34,8 +34,9 @@ public class LogManager : MonoBehaviour {
 
 		// Log session details
 		StreamWriter sw = new StreamWriter(sessionLogPath);
-		sw.WriteLine ("local_start_time\t" + System.DateTime.UtcNow.ToLocalTime());
 		sw.WriteLine ("user_id\t" + user_id);
+		sw.WriteLine ("local_start_time\t" + System.DateTime.UtcNow.ToLocalTime());
+		sw.WriteLine ("epoch_start_time\t" + EpochTime());
 		sw.Close();
 	}
 
@@ -44,17 +45,25 @@ public class LogManager : MonoBehaviour {
 		Log (eventName, "");
 	}
 	public void Log (string eventName, string additional) {
-		File.AppendAllText(eventLogPath, EpochTime ().ToString() + "\t" + eventName + "\t" + additional + "\n");
+		File.AppendAllText(eventLogPath, TimeStamp() + "\t" + eventName + "\t" + additional + "\n");
 	}
 
 	// For stream logging
 	public void Log (string PathToLog, double value) {
-		File.AppendAllText(PathToLog, EpochTime ().ToString() + "\t" + value.ToString() + "\n");
+		File.AppendAllText(PathToLog, TimeStamp() + "\t" + value.ToString() + "\n");
 	}
 
-	// To get Epoch Time
+	// To get Epoch Time in milliseconds * 100
 	public static double EpochTime () {
 		return (((System.DateTime.UtcNow - epochStart).TotalMilliseconds * 100));  // * 100 to remove decimal places
+	}
+
+	// To produce a time stamp suitable for logging
+	// Which is the millisecond *100 epoch time with the minimum number
+	// of  digits needed to represent a session within a day
+	public static string TimeStamp () {
+		string et = EpochTime().ToString ();    // Get epoch time as a string
+		return (et.Substring(et.Length - 11));  // Return the last 11 digits (which should be sufficient for a day)
 	}
 
 	// Convert a string into a stream log file path of file-type .tsv
