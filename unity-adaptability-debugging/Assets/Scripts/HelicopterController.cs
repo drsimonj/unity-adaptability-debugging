@@ -5,7 +5,7 @@ public class HelicopterController : MonoBehaviour {
 
 	public float speed = 5.0f;  // Speed at which helicopter can rotate around the player
 	public float flyHeight = 50.0f;  // Height above player tobe positioned
-	public float flyradius = 10.0f;  // Horizontal distance from player
+	public float flyRadius = 10.0f;  // Horizontal distance from player
 
 	private Transform player;
 	private Vector3 offset;
@@ -16,7 +16,6 @@ public class HelicopterController : MonoBehaviour {
 
 		// Initialize starting position
 		offset = new Vector3 (flyradius, flyHeight, 0.0f);
-		//transform.position = player.transform.position + offset;
 	}
 
 	void LateUpdate () {
