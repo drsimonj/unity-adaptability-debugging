@@ -1,9 +1,9 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\LogManager.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\HelicopterController.cs">
     <Files>
-      <File FileName="Assets\Scripts\LogManager.cs" Line="28" Column="1" />
-      <File FileName="Assets\Scripts\ForGame\MovePlayerLeftRight.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\ForGame\AutoOrbitPlayer.cs" Line="9" Column="71" />
+      <File FileName="Assets\Scripts\HelicopterController.cs" Line="35" Column="44" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

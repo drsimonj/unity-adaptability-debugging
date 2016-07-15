@@ -45,9 +45,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\ForGame\AutoOrbitPlayer.cs" />
      <Compile Include="Assets\Scripts\ForGame\MovePlayerLeftRight.cs" />
+     <Compile Include="Assets\Scripts\HelicopterController.cs" />
      <Compile Include="Assets\Scripts\LogManager.cs" />
-     <Compile Include="Assets\Scripts\TimeStamps.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
