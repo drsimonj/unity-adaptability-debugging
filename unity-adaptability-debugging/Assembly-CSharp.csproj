@@ -45,6 +45,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\DroneCameraController.cs" />
+     <Compile Include="Assets\Scripts\DroneOrbit.cs" />
      <Compile Include="Assets\Scripts\ForGame\AutoOrbitPlayer.cs" />
      <Compile Include="Assets\Scripts\ForGame\MovePlayerLeftRight.cs" />
      <Compile Include="Assets\Scripts\HelicopterController.cs" />
